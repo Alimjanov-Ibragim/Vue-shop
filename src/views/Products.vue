@@ -344,4 +344,20 @@ export default {
 .img-wrapp span.delete-img:hover {
   cursor: pointer;
 }
+.container .row .col-md-4 {
+  margin-bottom: 20px;
+}
+@media (max-width: 375px) {
+  .product-test h3.d-flex {
+    flex-direction: column;
+  }
+  .table td button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .table-responsive .btn {
+    font-size: 11px !important;
+    padding: 4px !important;
+  }
+}
 </style>

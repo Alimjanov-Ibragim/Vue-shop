@@ -16,6 +16,13 @@ Vue.use(VueCarousel);
 import Vue2Filters from "vue2-filters";
 Vue.use(Vue2Filters);
 
+import { VTable } from "vuetensils";
+Vue.component("VTable", VTable);
+
+import axios from "axios";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
+
 import Swal from "sweetalert2";
 window.Swal = Swal;
 const Toast = Swal.mixin({

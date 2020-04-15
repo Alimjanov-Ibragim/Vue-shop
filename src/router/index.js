@@ -7,6 +7,7 @@ import Products from "../views/Products.vue";
 import Profile from "../views/Profile.vue";
 import Orders from "../views/Orders.vue";
 import { fb } from "../firebase";
+import store from "../store";
 
 Vue.use(VueRouter);
 
@@ -82,6 +83,8 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
+  store.commit("hideModal", true);
+  next();
 });
 
 export default router;

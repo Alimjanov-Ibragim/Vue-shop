@@ -190,6 +190,7 @@
                   <div class="form-group">
                     <input
                       type="submit"
+                      @click="updateAccount"
                       value="Save Changes"
                       class="btn btn-primary w-100"
                     />
@@ -250,6 +251,7 @@ export default {
     updateProfile() {
       this.$firestore.profile.update(this.profile);
     },
+    updateAccount() {},
     resetPassword() {
       const auth = fb.auth();
 
@@ -265,7 +267,29 @@ export default {
           console.log(error);
         });
     },
-    uploadImage() {}
+    uploadImage(e) {
+      if (e.target.files[0]) {
+        let file = e.target.files[0];
+        // var storageRef = fb.storage().ref("products/" + file.name);
+        var storageRef = fb
+          .storage()
+          .ref("profiles/" + Math.random() + "_" + file.photoURL);
+        let uploadTask = storageRef.put(file);
+        uploadTask.on(
+          "state_changed",
+          snapshot => {},
+          error => {
+            // Handle unsuccessful uploads
+          },
+          () => {
+            uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => {
+              console.log("File available at", downloadURL);
+              this.account.photoUrl = downloadURL;
+            });
+          }
+        );
+      }
+    }
   },
   created() {}
 };

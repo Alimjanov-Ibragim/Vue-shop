@@ -21,31 +21,25 @@
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
+              <router-link to="/admin" class="nav-link">Admin</router-link>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            <a
+              class="btn my-2 ml-2 my-sm-0"
+              type="submit"
+              data-toggle="modal"
+              data-target="#miniCart"
+            >
+              <i class="fas fa-cart-plus"></i>
+            </a>
             <a
               class="btn btn-outline-success my-2 my-sm-0"
               type="submit"
               data-toggle="modal"
               data-target="#login"
             >
-              Get Start
-            </a>
-            <a
-              class="btn btn-outline-success my-2 my-sm-0"
-              type="submit"
-              data-toggle="modal"
-              data-target="#miniCart"
-            >
-              Cart
+              Sign In/ Sign Up
             </a>
           </form>
         </div>
@@ -61,4 +55,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.form-inline {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+</style>

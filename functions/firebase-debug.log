@@ -1,0 +1,813 @@
+[debug] [2020-04-14T00:01:52.351Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T00:01:52.352Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2020-04-14T00:01:52.353Z] CLI Version:   7.12.0
+[debug] [2020-04-14T00:01:52.353Z] Platform:      darwin
+[debug] [2020-04-14T00:01:52.353Z] Node Version:  v12.14.1
+[debug] [2020-04-14T00:01:52.353Z] Time:          Tue Apr 14 2020 05:01:52 GMT+0500 (GMT+05:00)
+[debug] [2020-04-14T00:01:52.353Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T00:01:52.353Z] 
+[debug] [2020-04-14T00:01:52.358Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-14T00:01:52.358Z] > authorizing via signed-in user
+[debug] [2020-04-14T00:01:52.359Z] [iam] checking project vue-shop-36f0f for permissions ["firebase.projects.get"]
+[debug] [2020-04-14T00:01:52.359Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-shop-36f0f:testIamPermissions  
+
+[debug] [2020-04-14T00:01:53.700Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-14T00:01:53.702Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-shop-36f0f  
+ 
+[debug] [2020-04-14T00:01:54.185Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "12.14.1" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/ibragim/Projects/vue/vue-shop/functions" for Cloud Functions...
+[debug] [2020-04-14T00:01:54.462Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:01:54.463Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-14T00:01:54.463Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:01:54.463Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16401.sock
+[debug] [2020-04-14T00:01:54.464Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: BUSY
+[debug] [2020-04-14T00:01:54.649Z] [runtime-status] [16401] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:01:54.650Z] [runtime-status] [16401] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:01:54.651Z] [runtime-status] [16401] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:01:54.651Z] [runtime-status] [16401] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:01:54.652Z] [runtime-status] [16401] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[helloWorld]: http function initialized (http://localhost:5000/vue-shop-36f0f/us-central1/helloWorld).
+[info] ✔  functions[CheckoutSession]: http function initialized (http://localhost:5000/vue-shop-36f0f/us-central1/CheckoutSession).
+[debug] [2020-04-14T00:01:54.761Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: IDLE
+[debug] [2020-04-14T00:02:28.782Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T00:02:28.782Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:02:28.783Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:02:28.787Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:02:28.787Z] [worker-pool] Adding worker with key CheckoutSession, total=1
+[debug] [2020-04-14T00:02:28.787Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:02:28.787Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:02:28.788Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: BUSY
+[debug] [2020-04-14T00:02:29.019Z] [runtime-status] [16428] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:02:29.020Z] [runtime-status] [16428] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:02:29.023Z] [runtime-status] [16428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:02:29.024Z] [runtime-status] [16428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:02:29.025Z] [runtime-status] [16428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:02:29.093Z] [runtime-status] [16428] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:02:29.094Z] [runtime-status] [16428] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:02:29.094Z] [runtime-status] [16428] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:02:29.098Z] [runtime-status] [16428] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:02:29.100Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:02:29.108Z] [runtime-status] [16428] Ephemeral server handling GET request
+[debug] [2020-04-14T00:02:29.118Z] [runtime-status] [16428] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:02:30.152Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: IDLE
+[debug] [2020-04-14T00:02:30.152Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T00:12:58.805Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T00:12:58.805Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:12:58.805Z] Accepted request POST /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:12:58.805Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:12:58.806Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:12:58.806Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: BUSY
+[debug] [2020-04-14T00:12:58.806Z] [runtime-status] [16428] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:12:58.806Z] [runtime-status] [16428] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:12:58.806Z] [runtime-status] [16428] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:12:58.807Z] [runtime-status] [16428] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:12:58.807Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:12:58.809Z] [runtime-status] [16428] Ephemeral server handling POST request
+[debug] [2020-04-14T00:12:58.810Z] [runtime-status] [16428] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:12:59.740Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: IDLE
+[debug] [2020-04-14T00:12:59.740Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T00:13:14.777Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T00:13:14.777Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:13:14.777Z] Accepted request POST /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:13:14.777Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:13:14.777Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:13:14.777Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: BUSY
+[debug] [2020-04-14T00:13:14.778Z] [runtime-status] [16428] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:13:14.779Z] [runtime-status] [16428] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:13:14.779Z] [runtime-status] [16428] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:13:14.779Z] [runtime-status] [16428] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:13:14.779Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:13:14.781Z] [runtime-status] [16428] Ephemeral server handling POST request
+[debug] [2020-04-14T00:13:14.782Z] [runtime-status] [16428] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:13:15.141Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: IDLE
+[debug] [2020-04-14T00:13:15.141Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T00:14:45.471Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T00:14:45.471Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:14:45.471Z] Accepted request POST /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:14:45.472Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:14:45.472Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:14:45.472Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: BUSY
+[debug] [2020-04-14T00:14:45.472Z] [runtime-status] [16428] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:14:45.472Z] [runtime-status] [16428] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:14:45.472Z] [runtime-status] [16428] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:14:45.472Z] [runtime-status] [16428] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16428.sock
+[debug] [2020-04-14T00:14:45.474Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:14:45.475Z] [runtime-status] [16428] Ephemeral server handling POST request
+[debug] [2020-04-14T00:14:45.476Z] [runtime-status] [16428] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:14:46.311Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: IDLE
+[debug] [2020-04-14T00:14:46.312Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-14T00:16:51.117Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:16:52.120Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:16:52.120Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: FINISHING
+[debug] [2020-04-14T00:16:52.120Z] [worker-pool] Shutting down IDLE worker (CheckoutSession)
+[debug] [2020-04-14T00:16:52.120Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: FINISHING
+[debug] [2020-04-14T00:16:52.125Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:16:52.125Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:16:52.125Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:16:52.125Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16559.sock
+[debug] [2020-04-14T00:16:52.125Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: BUSY
+[debug] [2020-04-14T00:16:52.127Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: exited
+[debug] [2020-04-14T00:16:52.127Z] [worker-~diagnostic~-01be5d6d-5b0a-427e-b4ab-c1b12597e47f]: FINISHED
+[debug] [2020-04-14T00:16:52.127Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: exited
+[debug] [2020-04-14T00:16:52.128Z] [worker-CheckoutSession-c7c638c0-02c8-4172-a06f-15ece04c9c38]: FINISHED
+[debug] [2020-04-14T00:16:52.374Z] [runtime-status] [16559] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:16:52.375Z] [runtime-status] [16559] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:16:52.377Z] [runtime-status] [16559] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:16:52.378Z] [runtime-status] [16559] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:16:52.378Z] [runtime-status] [16559] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:16:52.430Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: IDLE
+[debug] [2020-04-14T00:17:08.240Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:17:09.244Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:17:09.244Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: FINISHING
+[debug] [2020-04-14T00:17:09.244Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:17:09.244Z] [worker-pool] Cleaned up workers for CheckoutSession: 1 --> 0
+[debug] [2020-04-14T00:17:09.248Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:17:09.249Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:17:09.249Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:17:09.249Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16573.sock
+[debug] [2020-04-14T00:17:09.249Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: BUSY
+[debug] [2020-04-14T00:17:09.250Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: exited
+[debug] [2020-04-14T00:17:09.250Z] [worker-~diagnostic~-d95a71e7-1cdc-489a-b211-316078cf15b5]: FINISHED
+[debug] [2020-04-14T00:17:09.467Z] [runtime-status] [16573] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:17:09.468Z] [runtime-status] [16573] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:17:09.470Z] [runtime-status] [16573] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:17:09.470Z] [runtime-status] [16573] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:17:09.471Z] [runtime-status] [16573] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:17:09.499Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: IDLE
+[debug] [2020-04-14T00:17:46.443Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-14T00:17:46.443Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:17:46.443Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:17:46.443Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:17:46.447Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:17:46.447Z] [worker-pool] Adding worker with key CheckoutSession, total=1
+[debug] [2020-04-14T00:17:46.447Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:17:46.447Z] [worker-CheckoutSession-11398c6f-0c65-44e2-a6ef-06d1ba2c5ee4]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16591.sock
+[debug] [2020-04-14T00:17:46.447Z] [worker-CheckoutSession-11398c6f-0c65-44e2-a6ef-06d1ba2c5ee4]: BUSY
+[debug] [2020-04-14T00:17:46.654Z] [runtime-status] [16591] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:17:46.655Z] [runtime-status] [16591] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:17:46.656Z] [runtime-status] [16591] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:17:46.656Z] [runtime-status] [16591] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:17:46.657Z] [runtime-status] [16591] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:17:46.681Z] [runtime-status] [16591] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:17:46.681Z] [runtime-status] [16591] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:17:46.681Z] [runtime-status] [16591] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:17:46.684Z] [runtime-status] [16591] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16591.sock
+[debug] [2020-04-14T00:17:46.685Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:17:46.689Z] [runtime-status] [16591] Ephemeral server handling GET request
+[debug] [2020-04-14T00:17:46.690Z] [runtime-status] [16591] Ephemeral server survived.
+[debug] [2020-04-14T00:21:07.529Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:21:08.532Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:21:08.533Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: FINISHING
+[debug] [2020-04-14T00:21:08.533Z] [worker-pool] Marking BUSY worker to finish (CheckoutSession)
+[debug] [2020-04-14T00:21:08.533Z] [worker-CheckoutSession-11398c6f-0c65-44e2-a6ef-06d1ba2c5ee4]: FINISHING
+[debug] [2020-04-14T00:21:08.538Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:21:08.539Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:21:08.539Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:21:08.539Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16605.sock
+[debug] [2020-04-14T00:21:08.539Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: BUSY
+[debug] [2020-04-14T00:21:08.540Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: exited
+[debug] [2020-04-14T00:21:08.540Z] [worker-~diagnostic~-2922200b-76a9-4a01-9f1b-d5e74fd1f61d]: FINISHED
+[debug] [2020-04-14T00:21:08.730Z] [runtime-status] [16605] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:21:08.731Z] [runtime-status] [16605] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:21:08.732Z] [runtime-status] [16605] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:21:08.733Z] [runtime-status] [16605] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:21:08.734Z] [runtime-status] [16605] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:21:08.762Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: IDLE
+[debug] [2020-04-14T00:21:28.969Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:21:28.970Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:21:28.970Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:21:28.970Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:21:28.973Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:21:28.973Z] [worker-pool] Adding worker with key CheckoutSession, total=2
+[debug] [2020-04-14T00:21:28.973Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:21:28.973Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:28.973Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:21:29.216Z] [runtime-status] [16614] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:21:29.218Z] [runtime-status] [16614] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:21:29.221Z] [runtime-status] [16614] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:21:29.222Z] [runtime-status] [16614] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:21:29.223Z] [runtime-status] [16614] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:21:29.269Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:21:29.269Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:21:29.269Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:21:29.273Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:29.276Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:21:29.284Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:21:29.289Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:21:29.294Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:21:29.294Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:21:32.394Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:21:32.394Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:21:32.394Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:21:32.394Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:21:32.395Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:32.395Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:21:32.395Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:21:32.395Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:21:32.395Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:21:32.396Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:32.397Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:21:32.398Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:21:32.398Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:21:32.399Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:21:32.399Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:21:33.055Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:21:33.055Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:21:33.055Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:21:33.055Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:21:33.055Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:33.055Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:21:33.056Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:21:33.056Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:21:33.056Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:21:33.056Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:21:33.056Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:21:33.057Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:21:33.058Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:21:33.059Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:21:33.059Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:22:52.786Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:22:52.786Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:22:52.786Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession?products=%7B%22nRQarm6x45clmJ4HXnT8%22:2,%223zAKMl2Jj8lEYiZsCfL2%22:1%7D --> CheckoutSession
+[debug] [2020-04-14T00:22:52.786Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:22:52.787Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:22:52.787Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:22:52.788Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:22:52.788Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:22:52.788Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:22:52.788Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:22:52.789Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:22:52.791Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:22:52.794Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:22:52.794Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:22:52.794Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:23:18.662Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:23:18.662Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:23:18.662Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:23:18.663Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:23:18.663Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:18.663Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:23:18.663Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:23:18.663Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:23:18.663Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:23:18.664Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:18.664Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:23:18.665Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:23:18.666Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:23:18.666Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:23:18.666Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.274Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.275Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:23:19.275Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:23:19.275Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:23:19.275Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.275Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:23:19.275Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:23:19.275Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:23:19.275Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:23:19.276Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.276Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:23:19.277Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:23:19.278Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:23:19.278Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:23:19.278Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.503Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.503Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:23:19.503Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:23:19.503Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:23:19.503Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.503Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:23:19.504Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:23:19.504Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:23:19.504Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:23:19.504Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.505Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:23:19.505Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:23:19.506Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:23:19.507Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:23:19.507Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.682Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.683Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:23:19.683Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:23:19.683Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:23:19.683Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.683Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:23:19.683Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:23:19.683Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:23:19.683Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:23:19.684Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.684Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:23:19.685Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:23:19.686Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:23:19.687Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:23:19.687Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.899Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:23:19.899Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:23:19.899Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2020-04-14T00:23:19.900Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:23:19.900Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.900Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: BUSY
+[debug] [2020-04-14T00:23:19.900Z] [runtime-status] [16614] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:23:19.900Z] [runtime-status] [16614] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:23:19.900Z] [runtime-status] [16614] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:23:19.900Z] [runtime-status] [16614] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16614.sock
+[debug] [2020-04-14T00:23:19.901Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:23:19.902Z] [runtime-status] [16614] Ephemeral server handling GET request
+[debug] [2020-04-14T00:23:19.902Z] [runtime-status] [16614] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:23:19.903Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: IDLE
+[debug] [2020-04-14T00:23:19.903Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:24:13.309Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:24:14.311Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:24:14.311Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: FINISHING
+[debug] [2020-04-14T00:24:14.312Z] [worker-pool] Shutting down IDLE worker (CheckoutSession)
+[debug] [2020-04-14T00:24:14.312Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: FINISHING
+[debug] [2020-04-14T00:24:14.316Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:24:14.316Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:24:14.316Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:24:14.316Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16625.sock
+[debug] [2020-04-14T00:24:14.317Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: BUSY
+[debug] [2020-04-14T00:24:14.318Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: exited
+[debug] [2020-04-14T00:24:14.318Z] [worker-~diagnostic~-d8e97977-ae9a-4ced-b76f-861874a784ca]: FINISHED
+[debug] [2020-04-14T00:24:14.318Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: exited
+[debug] [2020-04-14T00:24:14.318Z] [worker-CheckoutSession-4c653ae1-e7e8-4ef4-b7d1-ae9f854b2ef0]: FINISHED
+[debug] [2020-04-14T00:24:14.518Z] [runtime-status] [16625] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:24:14.519Z] [runtime-status] [16625] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:24:14.522Z] [runtime-status] [16625] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:24:14.523Z] [runtime-status] [16625] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:24:14.524Z] [runtime-status] [16625] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:24:14.559Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: IDLE
+[debug] [2020-04-14T00:24:19.404Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:24:19.405Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:24:19.405Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession?products=%7B%22nRQarm6x45clmJ4HXnT8%22:2,%223zAKMl2Jj8lEYiZsCfL2%22:1%7D --> CheckoutSession
+[debug] [2020-04-14T00:24:19.405Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:24:19.405Z] [worker-pool] Cleaned up workers for CheckoutSession: 2 --> 1
+[debug] [2020-04-14T00:24:19.408Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:24:19.408Z] [worker-pool] Adding worker with key CheckoutSession, total=2
+[debug] [2020-04-14T00:24:19.408Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:24:19.408Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16633.sock
+[debug] [2020-04-14T00:24:19.408Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: BUSY
+[debug] [2020-04-14T00:24:19.598Z] [runtime-status] [16633] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:24:19.599Z] [runtime-status] [16633] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:24:19.600Z] [runtime-status] [16633] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:24:19.601Z] [runtime-status] [16633] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:24:19.601Z] [runtime-status] [16633] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:24:19.625Z] [runtime-status] [16633] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:24:19.625Z] [runtime-status] [16633] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:24:19.625Z] [runtime-status] [16633] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:24:19.628Z] [runtime-status] [16633] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16633.sock
+[debug] [2020-04-14T00:24:19.629Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:24:19.634Z] [runtime-status] [16633] Ephemeral server handling GET request
+[debug] [2020-04-14T00:24:19.638Z] [runtime-status] [16633] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:24:19.641Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: IDLE
+[debug] [2020-04-14T00:24:19.641Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:26:08.445Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:26:09.450Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:26:09.450Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: FINISHING
+[debug] [2020-04-14T00:26:09.451Z] [worker-pool] Shutting down IDLE worker (CheckoutSession)
+[debug] [2020-04-14T00:26:09.451Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: FINISHING
+[debug] [2020-04-14T00:26:09.455Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:26:09.455Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:26:09.455Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:26:09.455Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16638.sock
+[debug] [2020-04-14T00:26:09.455Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: BUSY
+[debug] [2020-04-14T00:26:09.456Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: exited
+[debug] [2020-04-14T00:26:09.456Z] [worker-~diagnostic~-eec8501f-691f-405f-95ad-b34caf15b793]: FINISHED
+[debug] [2020-04-14T00:26:09.457Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: exited
+[debug] [2020-04-14T00:26:09.458Z] [worker-CheckoutSession-d11a1820-03f2-4bb0-a508-6ea82c1ecb47]: FINISHED
+[debug] [2020-04-14T00:26:09.649Z] [runtime-status] [16638] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:26:09.650Z] [runtime-status] [16638] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:26:09.651Z] [runtime-status] [16638] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:26:09.651Z] [runtime-status] [16638] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:26:09.652Z] [runtime-status] [16638] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:26:09.676Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: IDLE
+[debug] [2020-04-14T00:26:12.996Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:26:12.996Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:26:12.996Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession?products=%7B%22nRQarm6x45clmJ4HXnT8%22:2,%223zAKMl2Jj8lEYiZsCfL2%22:1%7D --> CheckoutSession
+[debug] [2020-04-14T00:26:12.996Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:26:12.996Z] [worker-pool] Cleaned up workers for CheckoutSession: 2 --> 1
+[debug] [2020-04-14T00:26:12.999Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:26:12.999Z] [worker-pool] Adding worker with key CheckoutSession, total=2
+[debug] [2020-04-14T00:26:12.999Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:26:13.000Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16646.sock
+[debug] [2020-04-14T00:26:13.000Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: BUSY
+[debug] [2020-04-14T00:26:13.195Z] [runtime-status] [16646] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:26:13.196Z] [runtime-status] [16646] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:26:13.197Z] [runtime-status] [16646] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:26:13.198Z] [runtime-status] [16646] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:26:13.198Z] [runtime-status] [16646] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:26:13.222Z] [runtime-status] [16646] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:26:13.223Z] [runtime-status] [16646] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:26:13.223Z] [runtime-status] [16646] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:26:13.225Z] [runtime-status] [16646] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16646.sock
+[debug] [2020-04-14T00:26:13.227Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:26:13.231Z] [runtime-status] [16646] Ephemeral server handling GET request
+[debug] [2020-04-14T00:26:13.236Z] [runtime-status] [16646] Ephemeral server survived.
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2020-04-14T00:26:13.239Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: IDLE
+[debug] [2020-04-14T00:26:13.239Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-14T00:34:09.190Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:34:10.190Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:34:10.190Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: FINISHING
+[debug] [2020-04-14T00:34:10.190Z] [worker-pool] Shutting down IDLE worker (CheckoutSession)
+[debug] [2020-04-14T00:34:10.190Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: FINISHING
+[debug] [2020-04-14T00:34:10.195Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:34:10.195Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:34:10.195Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:34:10.195Z] [worker-~diagnostic~-8911bd56-bb2e-4488-94c5-e2e861e2c9ed]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16684.sock
+[debug] [2020-04-14T00:34:10.195Z] [worker-~diagnostic~-8911bd56-bb2e-4488-94c5-e2e861e2c9ed]: BUSY
+[debug] [2020-04-14T00:34:10.196Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: exited
+[debug] [2020-04-14T00:34:10.197Z] [worker-~diagnostic~-6f97eb72-8c45-4b7b-8d23-f880b0caab64]: FINISHED
+[debug] [2020-04-14T00:34:10.197Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: exited
+[debug] [2020-04-14T00:34:10.197Z] [worker-CheckoutSession-2b5c10cc-4131-4ac1-81f8-8858862d29df]: FINISHED
+[debug] [2020-04-14T00:34:10.430Z] [runtime-status] [16684] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:34:10.432Z] [runtime-status] [16684] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:34:10.433Z] [runtime-status] [16684] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:34:10.434Z] [runtime-status] [16684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:34:10.435Z] [runtime-status] [16684] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/ibragim/Projects/vue/vue-shop/functions/index.js:4
+const admin require('firebase-admin')
+      ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-14T00:34:10.476Z] [worker-~diagnostic~-8911bd56-bb2e-4488-94c5-e2e861e2c9ed]: exited
+[debug] [2020-04-14T00:34:10.477Z] [worker-~diagnostic~-8911bd56-bb2e-4488-94c5-e2e861e2c9ed]: FINISHED
+[debug] [2020-04-14T00:34:13.263Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:34:14.264Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-04-14T00:34:14.264Z] [worker-pool] Cleaned up workers for CheckoutSession: 2 --> 1
+[debug] [2020-04-14T00:34:14.268Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:34:14.268Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-14T00:34:14.268Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:34:14.268Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16692.sock
+[debug] [2020-04-14T00:34:14.268Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: BUSY
+[debug] [2020-04-14T00:34:14.462Z] [runtime-status] [16692] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:34:14.463Z] [runtime-status] [16692] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:34:14.465Z] [runtime-status] [16692] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:34:14.465Z] [runtime-status] [16692] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:34:14.466Z] [runtime-status] [16692] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:34:14.489Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: IDLE
+[debug] [2020-04-14T00:34:22.959Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:34:23.964Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:34:23.964Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: FINISHING
+[debug] [2020-04-14T00:34:23.969Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:34:23.969Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:34:23.969Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:34:23.969Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16700.sock
+[debug] [2020-04-14T00:34:23.970Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: BUSY
+[debug] [2020-04-14T00:34:23.970Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: exited
+[debug] [2020-04-14T00:34:23.970Z] [worker-~diagnostic~-cc0c27f1-e947-4022-9d2b-e91303bf11c2]: FINISHED
+[debug] [2020-04-14T00:34:24.160Z] [runtime-status] [16700] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:34:24.161Z] [runtime-status] [16700] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:34:24.162Z] [runtime-status] [16700] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:34:24.163Z] [runtime-status] [16700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:34:24.163Z] [runtime-status] [16700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:34:24.188Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: IDLE
+[debug] [2020-04-14T00:37:12.619Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:37:13.622Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:37:13.622Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: FINISHING
+[debug] [2020-04-14T00:37:13.623Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:37:13.627Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:37:13.627Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:37:13.628Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:37:13.628Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16710.sock
+[debug] [2020-04-14T00:37:13.628Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: BUSY
+[debug] [2020-04-14T00:37:13.629Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: exited
+[debug] [2020-04-14T00:37:13.629Z] [worker-~diagnostic~-dfb9af62-f08a-44c4-8f04-301702c7bf87]: FINISHED
+[debug] [2020-04-14T00:37:13.825Z] [runtime-status] [16710] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:37:13.826Z] [runtime-status] [16710] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:37:13.828Z] [runtime-status] [16710] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:37:13.828Z] [runtime-status] [16710] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:37:13.829Z] [runtime-status] [16710] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:37:13.853Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: IDLE
+[debug] [2020-04-14T00:37:50.182Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:37:51.183Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:37:51.183Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: FINISHING
+[debug] [2020-04-14T00:37:51.183Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:37:51.187Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:37:51.188Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:37:51.188Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:37:51.188Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16718.sock
+[debug] [2020-04-14T00:37:51.188Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: BUSY
+[debug] [2020-04-14T00:37:51.189Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: exited
+[debug] [2020-04-14T00:37:51.189Z] [worker-~diagnostic~-b8564760-5411-47b7-a5ac-117a0c47957b]: FINISHED
+[debug] [2020-04-14T00:37:51.388Z] [runtime-status] [16718] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:37:51.389Z] [runtime-status] [16718] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:37:51.390Z] [runtime-status] [16718] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:37:51.391Z] [runtime-status] [16718] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:37:51.391Z] [runtime-status] [16718] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:37:51.417Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: IDLE
+[debug] [2020-04-14T00:38:34.710Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:38:35.715Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:38:35.715Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: FINISHING
+[debug] [2020-04-14T00:38:35.715Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:38:35.719Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:38:35.720Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:38:35.720Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:38:35.720Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16726.sock
+[debug] [2020-04-14T00:38:35.720Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: BUSY
+[debug] [2020-04-14T00:38:35.721Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: exited
+[debug] [2020-04-14T00:38:35.721Z] [worker-~diagnostic~-82d50161-1443-45e9-b236-9848f6d5dde1]: FINISHED
+[debug] [2020-04-14T00:38:35.918Z] [runtime-status] [16726] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:38:35.919Z] [runtime-status] [16726] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:38:35.921Z] [runtime-status] [16726] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:38:35.921Z] [runtime-status] [16726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:38:35.922Z] [runtime-status] [16726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:38:35.946Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: IDLE
+[debug] [2020-04-14T00:40:51.981Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:40:52.984Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:40:52.985Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: FINISHING
+[debug] [2020-04-14T00:40:52.985Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:40:52.988Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:40:52.989Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:40:52.989Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:40:52.989Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16736.sock
+[debug] [2020-04-14T00:40:52.989Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: BUSY
+[debug] [2020-04-14T00:40:52.990Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: exited
+[debug] [2020-04-14T00:40:52.990Z] [worker-~diagnostic~-aaf3b666-d258-42a4-bc7d-ee45e3124977]: FINISHED
+[debug] [2020-04-14T00:40:53.199Z] [runtime-status] [16736] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:40:53.202Z] [runtime-status] [16736] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:40:53.204Z] [runtime-status] [16736] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:40:53.205Z] [runtime-status] [16736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:40:53.206Z] [runtime-status] [16736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:40:53.246Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: IDLE
+[debug] [2020-04-14T00:40:56.869Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:40:57.870Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:40:57.870Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: FINISHING
+[debug] [2020-04-14T00:40:57.870Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:40:57.874Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:40:57.874Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:40:57.874Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:40:57.874Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16744.sock
+[debug] [2020-04-14T00:40:57.875Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: BUSY
+[debug] [2020-04-14T00:40:57.875Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: exited
+[debug] [2020-04-14T00:40:57.875Z] [worker-~diagnostic~-a90ea8dd-264f-47b9-bd78-ad7c8979c877]: FINISHED
+[debug] [2020-04-14T00:40:58.078Z] [runtime-status] [16744] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:40:58.079Z] [runtime-status] [16744] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:40:58.081Z] [runtime-status] [16744] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:40:58.082Z] [runtime-status] [16744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:40:58.083Z] [runtime-status] [16744] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:40:58.118Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: IDLE
+[debug] [2020-04-14T00:41:23.288Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:41:24.291Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:41:24.291Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: FINISHING
+[debug] [2020-04-14T00:41:24.291Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:41:24.296Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:41:24.296Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:41:24.296Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:41:24.296Z] [worker-~diagnostic~-4be080ad-2e54-4298-b030-220af8916873]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16752.sock
+[debug] [2020-04-14T00:41:24.296Z] [worker-~diagnostic~-4be080ad-2e54-4298-b030-220af8916873]: BUSY
+[debug] [2020-04-14T00:41:24.297Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: exited
+[debug] [2020-04-14T00:41:24.297Z] [worker-~diagnostic~-4fbfb02e-1464-46ed-ba72-3a996715d6f1]: FINISHED
+[debug] [2020-04-14T00:41:24.493Z] [runtime-status] [16752] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:41:24.494Z] [runtime-status] [16752] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:41:24.496Z] [runtime-status] [16752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:41:24.496Z] [runtime-status] [16752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:41:24.497Z] [runtime-status] [16752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/ibragim/Projects/vue/vue-shop/functions/index.js:29
+    const all = await Promise.all(productsArray);
+                ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-14T00:41:24.534Z] [worker-~diagnostic~-4be080ad-2e54-4298-b030-220af8916873]: exited
+[debug] [2020-04-14T00:41:24.534Z] [worker-~diagnostic~-4be080ad-2e54-4298-b030-220af8916873]: FINISHED
+[debug] [2020-04-14T00:41:25.626Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:41:26.630Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-04-14T00:41:26.634Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:41:26.634Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-14T00:41:26.634Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:41:26.634Z] [worker-~diagnostic~-d4c0b905-4937-40aa-9b2f-3553475e1fd3]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16760.sock
+[debug] [2020-04-14T00:41:26.634Z] [worker-~diagnostic~-d4c0b905-4937-40aa-9b2f-3553475e1fd3]: BUSY
+[debug] [2020-04-14T00:41:26.853Z] [runtime-status] [16760] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:41:26.854Z] [runtime-status] [16760] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:41:26.856Z] [runtime-status] [16760] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:41:26.857Z] [runtime-status] [16760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:41:26.858Z] [runtime-status] [16760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/ibragim/Projects/vue/vue-shop/functions/index.js:29
+    const all = await Promise.all(productsArray);
+                ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-14T00:41:26.902Z] [worker-~diagnostic~-d4c0b905-4937-40aa-9b2f-3553475e1fd3]: exited
+[debug] [2020-04-14T00:41:26.902Z] [worker-~diagnostic~-d4c0b905-4937-40aa-9b2f-3553475e1fd3]: FINISHED
+[debug] [2020-04-14T00:41:43.724Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:41:44.730Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-04-14T00:41:44.734Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:41:44.734Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-14T00:41:44.734Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:41:44.735Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16768.sock
+[debug] [2020-04-14T00:41:44.735Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: BUSY
+[debug] [2020-04-14T00:41:44.932Z] [runtime-status] [16768] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:41:44.933Z] [runtime-status] [16768] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:41:44.934Z] [runtime-status] [16768] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:41:44.935Z] [runtime-status] [16768] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:41:44.935Z] [runtime-status] [16768] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:41:44.961Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: IDLE
+[debug] [2020-04-14T00:44:38.568Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:44:39.572Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:44:39.572Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: FINISHING
+[debug] [2020-04-14T00:44:39.577Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:44:39.577Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:44:39.577Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:44:39.577Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16776.sock
+[debug] [2020-04-14T00:44:39.577Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: BUSY
+[debug] [2020-04-14T00:44:39.578Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: exited
+[debug] [2020-04-14T00:44:39.578Z] [worker-~diagnostic~-c8a2187c-4b32-46c8-878b-7a19847bf9f4]: FINISHED
+[debug] [2020-04-14T00:44:39.772Z] [runtime-status] [16776] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:44:39.773Z] [runtime-status] [16776] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:44:39.775Z] [runtime-status] [16776] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:44:39.775Z] [runtime-status] [16776] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:39.776Z] [runtime-status] [16776] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:39.800Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: IDLE
+[debug] [2020-04-14T00:44:42.922Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:44:43.926Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:44:43.926Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: FINISHING
+[debug] [2020-04-14T00:44:43.927Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:44:43.932Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:44:43.932Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:44:43.932Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:44:43.932Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16784.sock
+[debug] [2020-04-14T00:44:43.932Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: BUSY
+[debug] [2020-04-14T00:44:43.933Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: exited
+[debug] [2020-04-14T00:44:43.933Z] [worker-~diagnostic~-6e7e9fc8-3319-48a7-9504-a4d7890ec208]: FINISHED
+[debug] [2020-04-14T00:44:44.184Z] [runtime-status] [16784] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:44:44.186Z] [runtime-status] [16784] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:44:44.187Z] [runtime-status] [16784] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:44:44.189Z] [runtime-status] [16784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:44.191Z] [runtime-status] [16784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:44.260Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: IDLE
+[debug] [2020-04-14T00:44:49.078Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-14T00:44:49.078Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-14T00:44:49.078Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession?products=%7B%22nRQarm6x45clmJ4HXnT8%22:2,%223zAKMl2Jj8lEYiZsCfL2%22:1%7D --> CheckoutSession
+[debug] [2020-04-14T00:44:49.078Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:44:49.081Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:44:49.081Z] [worker-pool] Adding worker with key CheckoutSession, total=2
+[debug] [2020-04-14T00:44:49.081Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:44:49.081Z] [worker-CheckoutSession-e73ff7e5-4353-4a28-ae3e-5e4b1dc6b913]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16792.sock
+[debug] [2020-04-14T00:44:49.081Z] [worker-CheckoutSession-e73ff7e5-4353-4a28-ae3e-5e4b1dc6b913]: BUSY
+[debug] [2020-04-14T00:44:49.272Z] [runtime-status] [16792] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:44:49.273Z] [runtime-status] [16792] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:44:49.274Z] [runtime-status] [16792] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:44:49.274Z] [runtime-status] [16792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:49.275Z] [runtime-status] [16792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:44:49.316Z] [runtime-status] [16792] Trigger "CheckoutSession" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2020-04-14T00:44:49.316Z] [runtime-status] [16792] triggerDefinition {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2020-04-14T00:44:49.317Z] [runtime-status] [16792] Running CheckoutSession in mode HTTPS
+[debug] [2020-04-14T00:44:49.319Z] [runtime-status] [16792] Attempting to listen to socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16792.sock
+[debug] [2020-04-14T00:44:49.321Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-14T00:44:49.325Z] [runtime-status] [16792] Ephemeral server handling GET request
+[debug] [2020-04-14T00:44:49.652Z] [runtime-status] [16792] Ephemeral server survived.
+[info] >  (node:16792) UnhandledPromiseRejectionWarning: Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+[info] >      at GoogleAuth.getApplicationDefaultAsync (/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/google-auth-library/build/src/auth/googleauth.js:160:19)
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[info] >      at async GoogleAuth.getClient (/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/google-auth-library/build/src/auth/googleauth.js:502:17)
+[info] >      at async GrpcClient._getCredentials (/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/google-gax/build/src/grpc.js:92:24)
+[info] >      at async GrpcClient.createStub (/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/google-gax/build/src/grpc.js:213:23)
+[info] >  (node:16792) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+[info] >  (node:16792) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-04-14T00:46:40.064Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:46:41.069Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:46:41.069Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: FINISHING
+[debug] [2020-04-14T00:46:41.069Z] [worker-pool] Marking BUSY worker to finish (CheckoutSession)
+[debug] [2020-04-14T00:46:41.069Z] [worker-CheckoutSession-e73ff7e5-4353-4a28-ae3e-5e4b1dc6b913]: FINISHING
+[debug] [2020-04-14T00:46:41.073Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:46:41.073Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:46:41.073Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:46:41.073Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16795.sock
+[debug] [2020-04-14T00:46:41.073Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: BUSY
+[debug] [2020-04-14T00:46:41.074Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: exited
+[debug] [2020-04-14T00:46:41.074Z] [worker-~diagnostic~-67e38c51-82a5-463c-becd-1271a028cde0]: FINISHED
+[debug] [2020-04-14T00:46:41.271Z] [runtime-status] [16795] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:46:41.272Z] [runtime-status] [16795] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:46:41.273Z] [runtime-status] [16795] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:46:41.274Z] [runtime-status] [16795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:46:41.274Z] [runtime-status] [16795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:46:41.299Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: IDLE
+[debug] [2020-04-14T00:46:55.521Z] File /Users/ibragim/Projects/vue/vue-shop/functions/index.js changed, reloading triggers
+[debug] [2020-04-14T00:46:56.522Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-04-14T00:46:56.522Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: FINISHING
+[debug] [2020-04-14T00:46:56.522Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:46:56.527Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T00:46:56.527Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-04-14T00:46:56.527Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T00:46:56.527Z] [worker-~diagnostic~-80a351d6-0dfd-4cdc-8a68-8b3dfbfaf1b4]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16808.sock
+[debug] [2020-04-14T00:46:56.527Z] [worker-~diagnostic~-80a351d6-0dfd-4cdc-8a68-8b3dfbfaf1b4]: BUSY
+[debug] [2020-04-14T00:46:56.528Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: exited
+[debug] [2020-04-14T00:46:56.528Z] [worker-~diagnostic~-a9bc1461-67a2-4a1c-9215-78c0c2ff7749]: FINISHED
+[debug] [2020-04-14T00:46:56.739Z] [runtime-status] [16808] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:46:56.740Z] [runtime-status] [16808] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:46:56.742Z] [runtime-status] [16808] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:46:56.742Z] [runtime-status] [16808] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:46:56.743Z] [runtime-status] [16808] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:46:56.765Z] [worker-~diagnostic~-80a351d6-0dfd-4cdc-8a68-8b3dfbfaf1b4]: IDLE
+[debug] [2020-04-14T00:47:04.438Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-04-14T00:47:04.438Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-04-14T00:47:04.438Z] Accepted request GET /vue-shop-36f0f/us-central1/CheckoutSession?products=%7B%22nRQarm6x45clmJ4HXnT8%22:2,%223zAKMl2Jj8lEYiZsCfL2%22:1%7D --> CheckoutSession
+[debug] [2020-04-14T00:47:04.438Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-04-14T00:47:04.441Z] [worker-pool] addWorker(CheckoutSession)
+[debug] [2020-04-14T00:47:04.441Z] [worker-pool] Adding worker with key CheckoutSession, total=3
+[debug] [2020-04-14T00:47:04.441Z] [worker-pool] submitWork(triggerId=CheckoutSession)
+[debug] [2020-04-14T00:47:04.441Z] [worker-CheckoutSession-0c5943eb-9a29-4fac-b1b4-739399a9a3d5]: Assigning socketPath: /var/folders/2_/_vdnf_6n05d6b3yv_1bdgfph0000gn/T/fire_emu_16816.sock
+[debug] [2020-04-14T00:47:04.441Z] [worker-CheckoutSession-0c5943eb-9a29-4fac-b1b4-739399a9a3d5]: BUSY
+[debug] [2020-04-14T00:47:04.636Z] [runtime-status] [16816] Functions runtime initialized. {"cwd":"/Users/ibragim/Projects/vue/vue-shop/functions","node_version":"12.14.1"}
+[debug] [2020-04-14T00:47:04.637Z] [runtime-status] [16816] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T00:47:04.638Z] [runtime-status] [16816] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T00:47:04.638Z] [runtime-status] [16816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T00:47:04.639Z] [runtime-status] [16816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/ibragim/Projects/vue/vue-shop/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Could not find trigger "CheckoutSession" in your functions directory.
+[warn] ⚠  Your function was killed because it raised an unhandled error.
+[info] i  functions: Beginning execution of "CheckoutSession"
+[warn] ⚠  functions: TypeError: Cannot read property 'definition' of undefined
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:657:47
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:3:12)
+    at invokeTrigger (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:649:12)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:773:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[debug] [2020-04-14T00:47:04.661Z] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:485:11)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:431:37)
+    at EventEmitter.emit (events.js:228:7)
+    at EventEmitter.emit (domain.js:475:20)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:494:25
+    at Array.forEach (<anonymous>)
+    at FunctionsEmulator.onData (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:492:32)
+    at ChildProcess.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:371:18)
+    at ChildProcess.emit (events.js:223:5)
+    at ChildProcess.EventEmitter.emit (domain.js:475:20)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-14T00:47:04.663Z] [worker-CheckoutSession-0c5943eb-9a29-4fac-b1b4-739399a9a3d5]: exited
+[debug] [2020-04-14T00:47:04.663Z] [worker-CheckoutSession-0c5943eb-9a29-4fac-b1b4-739399a9a3d5]: FINISHED

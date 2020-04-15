@@ -31,6 +31,7 @@
               <span class="user-name"
                 >John
                 <strong>Smith</strong>
+                {{ (name, userImg) }}
               </span>
               <span class="user-role"> {{ email }} </span>
               <span class="user-status">
@@ -119,6 +120,7 @@ export default {
     return {
       name: null,
       email: null,
+      userImg: null,
       pageWr: "toggled"
     };
   },
@@ -141,11 +143,29 @@ export default {
         .catch(err => {
           console.log(err);
         });
+    },
+    hideMenu() {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        let menus = document.querySelectorAll(
+          ".sidebar-wrapper .sidebar-menu ul li a"
+        );
+        for (let index = 0; index < menus.length; index++) {
+          menus[index].addEventListener("click", () => {
+            this.pageWr = "";
+          });
+        }
+        this.pageWr = "";
+      }
     }
   },
   created() {
     let user = fb.auth().currentUser;
     this.email = user.email;
+    // this.name = user.displayName;
+    // this.userImg = user.photoUrl;
+
+    window.addEventListener("resize", this.hideMenu);
+    this.hideMenu();
   }
 };
 </script>
@@ -154,5 +174,11 @@ export default {
 .page-content,
 .sidebar-content {
   text-align: left;
+}
+@media (max-width: 480px) {
+  body .page-wrapper .page-content > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 </style>

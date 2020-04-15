@@ -6,7 +6,17 @@ let cart = window.localStorage.getItem("cart");
 
 export default new Vuex.Store({
   state: {
-    cart: cart ? JSON.parse(cart) : []
+    cart: cart ? JSON.parse(cart) : [],
+    hideModal: true
+  },
+  getters: {
+    totalPrice: state => {
+      var sum = 0;
+      for (var i = 0; i < state.cart.length; i++) {
+        sum += parseFloat(state.cart[i].productPrice);
+      }
+      return sum;
+    }
   },
   mutations: {
     addToCart(state, item) {
@@ -25,6 +35,13 @@ export default new Vuex.Store({
       let index = state.cart.indexOf(item);
       state.cart.splice(index, 1);
       this.commit("saveData");
+    },
+    hideModal(state, payload) {
+      state.hideModal = payload;
+      if (payload) {
+        /* eslint-disable */
+        $(".modal").modal("hide");
+      }
     }
   }
 });

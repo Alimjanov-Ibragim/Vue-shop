@@ -83,7 +83,7 @@ export default {
   },
   methods: {
     checkout() {
-      $("#miniCart").modal("hide");
+      // $("#miniCart").modal("hide");
       this.$router.push("/checkout");
     }
   }

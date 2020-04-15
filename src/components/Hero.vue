@@ -48,4 +48,20 @@ export default {
   height: 500px;
   text-align: left;
 }
+img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .btn.custom-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .row.h-100 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .hero {
+    height: auto;
+  }
+}
 </style>
